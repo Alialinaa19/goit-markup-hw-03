@@ -51,7 +51,6 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
 }
 
 /* ----HEADER---- */
@@ -62,6 +61,7 @@ img {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: solid 1px #ECECEC;
 }
 
 .header-wrap {
@@ -240,7 +240,9 @@ margin-left: 30px;
 
 .team-list {display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
 }
+
 
 .team-list-item {
     width: calc(100% / 4 - 30px); 
@@ -278,7 +280,13 @@ margin-left: 30px;
 
 /* ----PORTFOLIO---- */
 
-
+.portfolio-list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
 .portfolio-list-btn {
     font-weight: 500;
     font-size: 16px;
@@ -287,6 +295,16 @@ margin-left: 30px;
     color: var(--primary-text-color);
     background-color: #F5F4FA;
     cursor: pointer;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: transparent;
+}
+
+.potfolio-list-item + .potfolio-list-item {
+    margin-left: 8px;
 }
 .portfolio-list-btn:hover,
 .portfolio-list-btn:focus {
@@ -303,3 +321,29 @@ margin-left: 30px;
 .portfolio-text {
     font-size: 16px;
     line-height: 1.87;}
+
+.portfolio-list-second {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+
+.portfolio-list-point {
+    width: calc(100% / 3 - 30px); 
+    margin-left: 30px;
+    border-bottom: solid 1px #EEEEEE;
+}
+
+.portfolio-section {
+    margin-bottom: 94px;
+}
+
+.portfolio-list-point:nth-child(-n + 6) {
+    margin-bottom: 30px;
+}
+
+.portfolio-name {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
